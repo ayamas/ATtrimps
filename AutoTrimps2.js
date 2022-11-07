@@ -23,6 +23,8 @@ function initializeAutoTrimps() {
     for (var m in ATmoduleList) {
         ATscriptLoad(modulepath, ATmoduleList[m]);
     }
+	debug("SET SPEED!!!");
+	//debug(game.settings.speed);
     debug('AutoTrimps - Ray Fork Loaded!', '*spinner3');
 }
 
@@ -175,7 +177,7 @@ function mainLoop() {
 
         //Core
 		//debug("SET SPEED!!!");
-		debug(game.settings.speed);
+		//debug(game.settings.speed);
         if (getPageSetting('AutoMaps') > 0) {
             autoMap(hdStats, vmStatus);
         } else if (getPageSetting('showautomapstatus')) {

@@ -175,7 +175,7 @@ function mainLoop() {
 
         //Core
 		//debug("SET SPEED!!!");
-		//debug(game.settings.speed);
+		debug(game.settings.speed);
         if (getPageSetting('AutoMaps') > 0) {
             autoMap(hdStats, vmStatus);
         } else if (getPageSetting('showautomapstatus')) {

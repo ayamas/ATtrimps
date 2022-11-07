@@ -15,7 +15,7 @@
 // ==/UserScript==
 
 var script = document.createElement('script');
-script.id = 'AutoTrimps-Ray';
+script.id = 'AutoTrimps-Ayamas';
 //This can be edited to point to your own Github Repository URL.
 script.src = 'https://github.com/ayamas/ATtrimps/AutoTrimps2.js';
 //script.setAttribute('crossorigin',"use-credentials");

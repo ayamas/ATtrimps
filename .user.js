@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         AutoTrimps-Ayamas
 // @version      1.0.0.0
-// @namespace    https://github.com/ayamas/ATtrimps
-// @downloadURL  https://github.com/ayamas/ATtrimps/.user.js
-// @updateURL    https://github.com/ayamas/ATtrimps/.user.js
+// @namespace    https://ayamas.github.io/ATtrimps
+// @downloadURL  https://ayamas.github.io/ATtrimps/.user.js
+// @updateURL    https://ayamas.github.io/ATtrimps/.user.js
 // @description  Automate all the trimps!
 // @author       ayamas
 // @include      *trimps.github.io*
@@ -17,7 +17,7 @@
 var script = document.createElement('script');
 script.id = 'AutoTrimps-Ayamas';
 //This can be edited to point to your own Github Repository URL.
-script.src = 'https://github.com/ayamas/ATtrimps/AutoTrimps2.js';
+script.src = 'https://ayamas.github.io/ATtrimps/AutoTrimps2.js';
 //script.setAttribute('crossorigin',"use-credentials");
 script.setAttribute('crossorigin',"anonymous");
 document.head.appendChild(script);

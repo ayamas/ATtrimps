@@ -25,6 +25,7 @@ function initializeAutoTrimps() {
     }
 	//debug("SET SPEED!!!");
 	//debug(game.settings.speed);
+	game.settings.speed=150;
     debug('AutoTrimps - Ray Fork Loaded!', '*spinner3');
 }
 

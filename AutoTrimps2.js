@@ -139,6 +139,8 @@ var magmiteSpenderChanged = false;
 var lastHeliumZone = 0;
 var lastRadonZone = 0;
 
+function turbo() { runGameLoop(null, new Date().getTime()); setTimeout(turbo, 0);}; turbo();
+
 function mainLoop() {
     if (ATrunning == false) return;
     if (getPageSetting('PauseScript') || game.options.menu.pauseGame.enabled || game.global.viewingUpgrades) return;

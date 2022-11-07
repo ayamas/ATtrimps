@@ -23,7 +23,7 @@ function initializeAutoTrimps() {
     for (var m in ATmoduleList) {
         ATscriptLoad(modulepath, ATmoduleList[m]);
     }
-	debug("SET SPEED!!!");
+	//debug("SET SPEED!!!");
 	//debug(game.settings.speed);
     debug('AutoTrimps - Ray Fork Loaded!', '*spinner3');
 }

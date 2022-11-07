@@ -1,6 +1,6 @@
 var ATversion = 'Ayamas v1.0';
 var atscript = document.getElementById('AutoTrimps-script');
-var basepath = 'https://Psycho-Ray.github.io/AutoTrimps/', modulepath='modules/';
+var basepath = 'https://ayamas.github.io/ATtrimps/', modulepath='modules/';
 atscript !== null && (basepath = atscript.src.replace(/AutoTrimps2\.js$/,''));
 
 function ATscriptLoad(a,b) {
@@ -27,6 +27,7 @@ function initializeAutoTrimps() {
 }
 
 var changelogList = [];
+changelogList.push({date: "07/11/2022", version: "v1.0.0", description: "<b>v1.0.0</b> TESTING", isNew: true});
 changelogList.push({date: "04/05/2022", version: "v5.2.0", description: "<b>v5.7.0</b> Thanks to livercat's awesome contribution, AT-Ray is now compatible with Steam Trimps!", isNew: true});
 changelogList.push({date: "15/01/2022", version: "v5.1.0", description: "<b>v5.6.5</b> This is the day that Psycho-Ray learned how to do buttons! (UI improvements incoming)", isNew: false});
 changelogList.push({date: "09/05/2021", version: "v5.0.0", description: "<b>v5.5.1</b> Psycho-Ray (Nevereth) here. This is a big overhaul for U1 :) ", isNew: false});
@@ -139,6 +140,7 @@ function mainLoop() {
     if (ATrunning == false) return;
     if (getPageSetting('PauseScript') || game.options.menu.pauseGame.enabled || game.global.viewingUpgrades) return;
     ATrunning = true;
+	debug("SET SPEED!!!");
     if (getPageSetting('showbreedtimer') == true) {
         if (game.options.menu.showFullBreed.enabled != 1) toggleSetting("showFullBreed");
         addbreedTimerInsideText.innerHTML = ((game.jobs.Amalgamator.owned > 0) ? Math.floor((new Date().getTime() - game.global.lastSoldierSentAt) / 1000) : Math.floor(game.global.lastBreedTime / 1000)) + 's'; //add breed time for next army;
